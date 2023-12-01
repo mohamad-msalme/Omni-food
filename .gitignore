@@ -9,9 +9,7 @@ out/
 # Environment
 .env
 .env.local
-.env.development
 .env.test
-.env.production
 
 # Logs
 logs
@@ -40,7 +38,6 @@ jspm_packages/
 .npm
 
 # Optional pnpm store directory
-pnpm-lock.yaml
 .pnp.*
 
 # Visual Studio Code directories
