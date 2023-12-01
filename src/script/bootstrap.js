@@ -1,0 +1,47 @@
+import '../styles/main.scss'
+
+/**
+ * import assets
+ */
+import '../assets/images/test22.jpg'
+import '../assets/images/test.jpg'
+import '../assets/images/eating.jpg'
+import '../assets/images/hero.png'
+import '../assets/images/omnifood-logo.png'
+import '../assets/images/business-insider.png'
+import '../assets/images/forbes.png'
+import '../assets/images/techcrunch.png'
+import '../assets/images/the-new-york-times.png'
+import '../assets/images/usa-today.png'
+import '../assets/images/app-screen-1.png'
+import '../assets/images/app-screen-2.png'
+import '../assets/images/app-screen-3.png'
+
+import '../assets/images/meal-1.jpg'
+import '../assets/images/meal-2.jpg'
+
+import '../assets/images/ben.jpg'
+import '../assets/images/dave.jpg'
+import '../assets/images/hannah.jpg'
+import '../assets/images/steve.jpg'
+
+import '../assets/images/customer-1.jpg'
+import '../assets/images/customer-2.jpg'
+import '../assets/images/customer-3.jpg'
+import '../assets/images/customer-4.jpg'
+import '../assets/images/customer-5.jpg'
+import '../assets/images/customer-6.jpg'
+
+import '../assets/images/gallery-1.jpg'
+import '../assets/images/gallery-2.jpg'
+import '../assets/images/gallery-3.jpg'
+import '../assets/images/gallery-4.jpg'
+import '../assets/images/gallery-5.jpg'
+import '../assets/images/gallery-6.jpg'
+import '../assets/images/gallery-7.jpg'
+import '../assets/images/gallery-8.jpg'
+import '../assets/images/gallery-9.jpg'
+import '../assets/images/gallery-10.jpg'
+import '../assets/images/gallery-11.jpg'
+import '../assets/images/gallery-12.jpg'
+import '../assets/images/favicon.png'

@@ -1,0 +1,32 @@
+/* The code you provided is written in SCSS (Sassy CSS) syntax. It defines a CSS class called `.header`
+and specifies its styles. Here's a breakdown of what each line does: */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: colors.$primary-color-light;
+  height: 9.6rem;
+
+  .logo {
+    height: 2.2rem;
+  }
+  .main-nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 4.8rem;
+  }
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+  transition: all 0.4s;
+}

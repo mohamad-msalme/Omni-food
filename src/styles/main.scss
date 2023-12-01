@@ -1,0 +1,48 @@
+/**
+Partial files 
+*/
+@use './base/reset';
+@use './base/colors';
+@use './base/typography';
+@use './base/spaces';
+@use './base/utility';
+
+/**
+import componens 
+*/
+@import './components/buttons';
+@import './components/tag.scss';
+@import './components/mealCard.scss';
+@import './components/subheading.scss';
+@import './components/gallery.scss';
+@import './components/headingSecondary.scss';
+@import './components/icon.scss';
+@import './components/pricingCard.scss';
+@import './components/dietCard.scss';
+@import './layout/ctaSection.scss';
+@import './components/form.scss';
+/**
+import section layout
+*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+  font-family: typography.$base-font-family;
+  color: colors.$text-color-primary;
+  overflow-x: hidden;
+}
+
+@import './layout/headerSection.scss';
+@import './layout/herosSection.scss';
+@import './layout/partnersSection.scss';
+@import './layout/howWorkSection.scss';
+@import './layout/mealsSection.scss';
+@import './layout/testimonialsSection.scss';
+@import './layout/pricingSection.scss';
+@import './layout/footerSection.scss';
+@import './layout/breakpoints.scss';

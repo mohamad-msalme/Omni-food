@@ -1,0 +1,18 @@
+/* The code is defining the styles for a gallery component using SCSS (Sass). */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  // padding: 1.6rem;
+  .gallery-item {
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

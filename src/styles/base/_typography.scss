@@ -1,0 +1,72 @@
+/**
+text-size
+**/
+$text-caption: 1.4rem;
+$text-subtitle1: 1.6rem;
+$text-subtitle2: 1.8rem;
+$text-body1: 1.8rem;
+$text-body2: 2rem;
+$text-button1: 1.8rem;
+$text-button2: 2rem;
+$text-heading-5: 2rem;
+$text-heading-4: 2.4rem;
+$text-heading-3: 3rem;
+$text-heading-2: 4.4rem;
+$text-heading-1: 5.2rem;
+$text-large: 6.2rem;
+$text-xlarge: 8.6rem;
+$base-font-family: 'Rubik', sans-serif;
+
+/**
+ font-weight
+*/
+$font-weight-values: (400, 500, 600, 700) !default;
+
+// Font weight utility function
+@mixin make-font-weight-classes($values) {
+  @each $value in $values {
+    .fw-#{$value} {
+      font-weight: $value;
+    }
+  }
+}
+
+// Include font weight utility
+@include make-font-weight-classes($font-weight-values);
+
+/**
+line-height
+def: 1,
+small: 1.05
+med: 1.2
+p-def: 1.6
+*/
+%shared {
+  letter-spacing: -0.5px;
+}
+.heading-1 {
+  @extend %shared;
+  font-size: $text-heading-1;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.heading-2 {
+  @extend %shared;
+  font-size: $text-heading-2;
+  line-height: 1.2;
+}
+
+h3 {
+  @extend %shared;
+  font-size: $text-heading-3;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: $text-heading-4;
+}
+
+h5 {
+  font-size: $text-heading-5;
+}

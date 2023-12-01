@@ -1,0 +1,85 @@
+.princing-plan {
+  padding: 4.6rem;
+  border-radius: 10px;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: translateY(-1.5rem);
+  }
+  .plan-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.8rem;
+    .plan-name {
+      font-weight: 600;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: colors.$primary-color-dark;
+      margin-bottom: 3.2rem;
+    }
+    .plan-price {
+      font-size: 6.2rem;
+      font-weight: 600;
+      margin-bottom: 1.6rem;
+      span {
+        font-size: 3rem;
+        margin-right: 0.85rem;
+      }
+    }
+    .plan-text {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: colors.$text-color-light;
+    }
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: colors.$text-color-secondary;
+    margin-bottom: 4.8rem;
+
+    .list-item {
+      color: colors.$text-color-secondary;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+  }
+  .plan-sing-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.princing-plan--starter {
+    grid-column: 1;
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+  }
+
+  &.princing-plan--complete {
+    grid-column: 2;
+    justify-self: start;
+    background-color: colors.$primary-color-light;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: 'Best value';
+      position: absolute;
+      top: 6%;
+      right: -18%;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #333;
+      background-color: #ffd43b;
+      padding: 0.8rem 8rem;
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,0 +1,74 @@
+footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+  font-size: 1.6rem;
+
+  .footer {
+    display: grid;
+    gap: 6.4rem;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+    .address-text {
+      margin-top: auto;
+      line-height: 1.6;
+    }
+
+    img {
+      height: 2.2rem;
+      display: block;
+      margin-bottom: 4rem;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      flex: 1;
+    }
+
+    .address {
+      font-size: 1.6rem;
+      color: colors.$text-color-secondary;
+      font-style: normal;
+      line-height: 1.6;
+    }
+
+    .copyright {
+      color: #777;
+      margin-top: auto;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      grid-column: 1 / -1;
+    }
+
+    .footer-heading {
+      color: colors.$text-color-secondary;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 4rem;
+    }
+
+    .footer-link:link,
+    .footer-link:visited {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: colors.$text-color-light2;
+      transition: all 0.4s;
+    }
+
+    .footer-link:hover,
+    .footer-link:active {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: colors.$text-color-secondary;
+    }
+
+    .social-links {
+      display: flex;
+      column-gap: 2rem;
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}

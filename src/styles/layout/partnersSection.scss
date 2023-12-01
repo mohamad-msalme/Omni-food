@@ -1,0 +1,20 @@
+.section-partners {
+  .partners-heading {
+    font-size: typography.$text-caption;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: colors.$text-color-light2;
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      height: 3.2rem;
+      opacity: 50%;
+      filter: brightness(0);
+    }
+  }
+}

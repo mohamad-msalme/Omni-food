@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+span {
+  font-weight: 500;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}

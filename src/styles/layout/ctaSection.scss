@@ -1,0 +1,48 @@
+// @import '../../assets/images/eating.jpg';
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+
+  .cta {
+    display: grid;
+    color: #45260a;
+    overflow: hidden;
+    border-radius: 11px;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(
+      to right bottom,
+      #eb984e,
+      colors.$primary-color
+    );
+
+    .cta-text-box {
+      padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+      .heading-secondary {
+        letter-spacing: -0.5px;
+        margin-bottom: 3.2rem;
+      }
+
+      .cta-text {
+        font-size: 1.8rem;
+        line-height: 1.6;
+        margin-bottom: 4.8rem;
+      }
+    }
+    .cta-img-box {
+      width: 100%;
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(235, 151, 78, 0.35),
+          rgba(230, 125, 34, 0.35)
+        ),
+        url('../assets/images/test.jpg'); // Update this line
+      transition: all 0.4s;
+      background-size: cover;
+      background-position: center;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

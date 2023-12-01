@@ -1,0 +1,34 @@
+@use 'sass:math';
+// change to false if its not imported into bootstrap
+// margin and padding values array
+$space-values: (2, 4, 8, 12, 16, 24, 32, 48, 64, 8, 96, 128) !default;
+
+// margin and padding shorthands
+$space-prefixes: (
+  p: padding,
+  pt: padding-top,
+  pr: padding-right,
+  pb: padding-bottom,
+  pl: padding-left,
+  m: margin,
+  mt: margin-top,
+  mr: margin-right,
+  mb: margin-bottom,
+  ml: margin-left,
+) !default;
+
+// main function definition
+@mixin make-space($values, $prefixes) {
+  // if xs value = 0, set it global without media queries
+  @each $attr-short, $attr-long in $prefixes {
+    @each $value in $values {
+      $calculated-value: math.div($value, 10);
+      .#{$attr-short}-#{$value} {
+        /* prettier-ignore */
+        #{$attr-long}: #{$calculated-value}rem; // Use math.div() for division
+      }
+    }
+  }
+}
+
+@include make-space($space-values, $space-prefixes);

@@ -1,0 +1,111 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  font-size: typography.$text-button2;
+  background-color: colors.$primary-color;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: colors.$primary-color-dark;
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  font-size: typography.$text-button2;
+  background-color: white;
+  color: colors.$text-color-secondary;
+  border-radius: 9px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  box-shadow: inset 0 0 0 3px #fff;
+  background-color: transparent;
+}
+
+.btn-text:link,
+.btn-text:visited {
+  background-color: transparent;
+  color: colors.$text-color-primary;
+  font-size: typography.$text-button1;
+}
+
+.btn-text:hover,
+.btn-text:active {
+  color: colors.$primary-color;
+}
+
+.btn.btn-primary-nav {
+  font-size: typography.$text-button1;
+  border-radius: 9px;
+  padding: 1.2rem 2.4rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 4.8rem;
+}
+
+.btn-all-recipes:link,
+.btn-all-recipes:visited {
+  color: colors.$primary-color;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+}
+
+.btn-all-recipes:hover,
+.btn-all-recipes:active {
+  border-bottom: none;
+}
+
+.btn-all-recipes:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+.btn--form {
+  font-weight: 600;
+  background-color: #45260a;
+  color: white;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  border-radius: 9px;
+  align-self: end;
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover {
+    background-color: white;
+    color: colors.$text-color-secondary;
+  }
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.8rem rgba(150, 100, 70, 0.5);
+  }
+}
+
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  display: none;
+  z-index: 100;
+  &:focus {
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+    outline: 0;
+  }
+}

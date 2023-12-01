@@ -1,0 +1,54 @@
+.section-how {
+  .section-how-steps {
+    gap: 9.6rem 6.4rem;
+    .step-number {
+      font-size: 8.6rem;
+      color: colors.$text-color-lighter;
+      margin-bottom: 1.2rem;
+    }
+
+    .heading-3 {
+      margin-bottom: 3.2rem;
+    }
+
+    .step-description {
+      color: colors.$text-color-secondary;
+      font-size: 1.8rem;
+      line-height: 1.8;
+    }
+
+    .step-img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      &::before {
+        width: 60%;
+        padding-bottom: 60%;
+        background-color: colors.$primary-color-light;
+        z-index: -1;
+      }
+
+      &::after {
+        width: 45%;
+        padding-bottom: 45%;
+        background-color: colors.$primary-color-lighter;
+
+        z-index: -1;
+      }
+
+      img {
+        width: 35%;
+      }
+    }
+  }
+}

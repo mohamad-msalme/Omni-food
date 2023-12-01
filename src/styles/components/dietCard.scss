@@ -1,0 +1,22 @@
+.diets {
+  h3 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: colors.$text-color-secondary;
+    .list-item {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+}

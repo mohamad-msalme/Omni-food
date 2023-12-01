@@ -1,0 +1,637 @@
+/**
+Bellow 1344 (smaller desktop)
+*/
+@media (max-width: 86em) {
+  .section-hero {
+    .hero {
+      max-width: 120rem;
+    }
+    .heading-1 {
+      font-size: 4.4rem;
+    }
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .section-testimonials {
+    .testimonials {
+      grid-template-columns: 1fr;
+      .testimonials-header {
+        .subheading {
+          text-align: center;
+        }
+        .heading-secondary {
+          text-align: center;
+          margin-bottom: 3.2rem;
+        }
+        .testimonials-content {
+          padding: 0;
+          gap: 4.8rem;
+
+          .testimonial {
+            .testimonial-img {
+              width: 6.4rem;
+              border-radius: 50%;
+              margin-bottom: 1.2rem;
+            }
+            .testimonial-text {
+              max-width: 80%;
+              font-size: 1.8rem;
+              line-height: 1.8;
+              margin-bottom: 1.6rem;
+              color: colors.$text-color-secondary;
+            }
+            .testimonial-name {
+              font-size: 1.6rem;
+              color: colors.$text-color-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/****************
+/* Bello 1200px (LandScap)
+*****************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .heading-secondary,
+  .heading-2 {
+    font-size: 3.6rem;
+  }
+  .heading-3 {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem !important;
+    row-gap: 6.4rem !important;
+  }
+  .diets {
+    h3 {
+      font-size: 2.4rem;
+    }
+  }
+  .header {
+    padding: 0 3.2rem;
+    .main-nav-list {
+      column-gap: 3.2rem;
+    }
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    .main-nav {
+      background-color: rgba(255, 255, 255, 0.9);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      transform: translateX(100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in;
+      /* display: none; */
+      opacity: 0;
+      /* pointer-events: none; */
+      visibility: hidden;
+      z-index: 10;
+      .main-nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4.8rem;
+        .btn.btn-text,
+        .btn.btn-primary.btn-primary-nav {
+          font-size: 3.2rem;
+        }
+      }
+    }
+    .btn-mobile-nav.menu-outline {
+      display: block;
+    }
+
+    &.nav-open {
+      .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+      }
+      .btn-mobile-nav.close-outline {
+        display: block;
+      }
+      .btn-mobile-nav.menu-outline {
+        display: none;
+      }
+    }
+  }
+
+  .section-hero {
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 0 8rem;
+      gap: 6.4rem;
+      justify-content: center;
+      align-items: center;
+      .hero-text-box {
+        .heading-1 {
+          text-align: center;
+        }
+        .hero-descption {
+          text-align: center;
+        }
+
+        .delivered-meals {
+          margin-top: 3.2rem;
+          justify-content: center;
+        }
+      }
+      .hero-img-box {
+        text-align: center;
+        .hero-img {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .section-partners {
+    .logos {
+      img {
+        height: 2.4rem;
+      }
+    }
+  }
+
+  .section-how {
+    .section-how-steps {
+      .step-number {
+        font-size: 7.4rem;
+      }
+    }
+  }
+
+  .meal-card {
+    .meal-card-content {
+      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+    .gallery-item {
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: all 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .section-cta {
+    .cta {
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+    button {
+      margin-top: 2rem;
+    }
+  }
+}
+
+/******************
+/* Bellow 704px
+/******************/
+@media (max-width: 44em) {
+  //
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    padding: 3.2rem;
+  }
+
+  .heading-2 {
+    margin-bottom: 4.8rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .princing-plan.princing-plan--starter {
+    // grid-column: 1;
+    justify-self: normal;
+    min-width: 30rem;
+    // border: 2px solid #fdf2e9;
+  }
+
+  .princing-plan.princing-plan--complete {
+    // grid-column: 2;
+    min-width: 30rem;
+
+    justify-self: normal;
+  }
+
+  .grid {
+    column-gap: 3.2rem !important;
+    row-gap: 4.8rem !important;
+  }
+
+  .hero {
+    .hero-text-box {
+      .hero-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.2rem 1.6rem;
+      }
+
+      .delivered-meals {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.2rem 1.6rem;
+      }
+    }
+  }
+
+  .section-cta {
+    .cta {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      .cta-text-box {
+        padding: 3.2rem;
+      }
+      .cta-img-box {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-section {
+    .footer {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 4.6rem;
+      .social-col {
+        grid-column: 1 / 3;
+      }
+
+      .address-col {
+        grid-column: 3/ 5;
+      }
+      .footer-heading {
+        margin-bottom: 0;
+      }
+      & > * {
+        row-gap: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 45%;
+  }
+
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 3.2rem;
+
+    .hero {
+      padding: 0;
+      .hero-text-box {
+        .delivered-meals {
+          gap: 0;
+          justify-content: center;
+          gap: 0 1.6rem;
+        }
+      }
+
+      .hero-img-box .hero-img {
+        width: 70%;
+      }
+    }
+  }
+
+  .section-partners {
+    .container {
+      .logos {
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .section-how {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .section-how-steps {
+      .step-img-box img {
+        width: 50%;
+      }
+    }
+  }
+
+  .section-meals {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .section-testimonials {
+    .testimonials {
+      .testimonials-header {
+        .testimonials-content {
+          grid-template-columns: 1fr;
+          .testimonial {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            gap: 3.2rem;
+            img {
+              grid-column: 1;
+              align-self: center;
+              justify-self: center;
+            }
+            .testimonial-text {
+              max-width: 100%;
+            }
+            .testimonial-name {
+              grid-column: 2;
+              transform: translateY(-2rem);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .gallery {
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section-pricing {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .subheading {
+      text-align: center;
+    }
+    .heading-secondary {
+      text-align: center;
+    }
+    .princing-plan {
+      min-width: 26rem;
+      &.princing-plan--complete::after {
+        right: -27%;
+      }
+    }
+  }
+
+  .section-cta {
+    padding-top: 0;
+    padding-bottom: 6rem;
+  }
+
+  .footer-section {
+    padding: 6rem 0;
+    .footer {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3.2rem;
+      img {
+        margin-bottom: 1.6rem;
+      }
+
+      .social-col {
+        grid-column: 1;
+      }
+      .address-col {
+        grid-column: 2 / 4;
+      }
+
+      .resource--col {
+        grid-column: 3;
+      }
+
+      .footer-heading {
+        margin-bottom: 0;
+      }
+
+      & > * {
+        row-gap: 1.6rem;
+      }
+    }
+  }
+
+  .btn-primary:link,
+  .btn-primary:visited {
+    padding: 1.6rem 2.4rem;
+  }
+}
+
+@media (max-width: 27em) {
+  html {
+    font-size: 40%;
+  }
+
+  .section-hero {
+    padding: 3.2rem;
+    .hero {
+      padding: 0;
+      .hero-text-box {
+        .heading-1 {
+          font-size: 3.9rem;
+        }
+      }
+      .hero-img-box {
+        .hero-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .grid--2--cols,
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-how {
+    .section-how-steps {
+      .step-img-box img {
+        width: 35%;
+      }
+      div:nth-of-type(2) {
+        grid-row: 1;
+        transform: translateY(10px);
+      }
+      div:nth-of-type(3) {
+        transform: translateY(10px);
+      }
+      div:nth-of-type(6) {
+        transform: translateY(10px);
+        grid-row: 5;
+      }
+    }
+  }
+
+  .section-meals {
+    .meal-card,
+    .diets {
+      width: 70%;
+    }
+  }
+
+  .gallery {
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-pricing {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .princing-plan {
+      width: 70%;
+      grid-column: 1;
+      justify-self: center;
+      align-self: center;
+      &.princing-plan--complete::after {
+        right: -17%;
+      }
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      gap: 0 3.2rem;
+      .feature-icon {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+
+  .footer-section {
+    .footer {
+      grid-template-columns: 1fr 1fr;
+      img {
+        margin-bottom: 1.6rem;
+      }
+      .address-col {
+        grid-column: 2 / 3;
+      }
+      .footer-heading {
+        margin-bottom: 0;
+      }
+
+      .resource--col {
+        grid-column: 1;
+      }
+
+      & > * {
+        row-gap: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 20em) {
+  .section-hero {
+    .hero {
+      .hero-text-box {
+        .hero-cta {
+          flex-direction: column;
+          gap: 1.6rem;
+        }
+        .hero-descption {
+          margin-bottom: 3.2rem;
+        }
+        .delivered-meals {
+          flex-direction: column;
+          gap: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .section-meals {
+    .meal-card,
+    .diets {
+      width: 80%;
+    }
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-pricing {
+    .princing-plan {
+      width: 80%;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      gap: 0 3.2rem;
+    }
+  }
+
+  .footer-section {
+    .footer {
+      grid-template-columns: 1fr;
+      .address-col {
+        grid-column: 1;
+      }
+      .footer-heading {
+        margin-bottom: 0;
+      }
+
+      .resource--col {
+        grid-column: 1;
+      }
+    }
+  }
+}
